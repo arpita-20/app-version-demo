@@ -29,6 +29,12 @@
       "pre-commit": "tsdx lint"
     }
   },
+  "plugins": [
+    "@semantic-release/npm",
+    {
+      "npmPublish": false
+    }
+  ],
   "prettier": {
     "printWidth": 80,
     "semi": true,
@@ -72,6 +78,7 @@
     }
   },
   "dependencies": {
-    "@semantic-release/changelog": "^6.0.1"
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/npm": "^9.0.1"
   }
 }
